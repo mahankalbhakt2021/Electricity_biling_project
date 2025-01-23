@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://files.123freevectors.com/wp-content/original/107033-light-blue-abstract.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0px 10px;
+}
+header h2{
+    letter-spacing: 2.5px;
+    font-size: 40px;
+    font-weight:bold;
+    color: black;
+}
+
+/* nav_bar Section  */
+
+nav{
+    width: 100%;
+    height: 75px;
+    background-image: linear-gradient(#033747,#012733);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.conatent-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    /* background-color: red; */
+    margin-right: 15px;
+}
+.conatent-items a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.login_me{
+    border: 1px solid #ccc;
+    background-color: #cccccc41;
+    border-radius: 5px;
+    margin: 0 0 0 8px;
+    padding: 5px;
+}
+.conatent-items a:hover{
+    color:#ff8c69;
+    transition: all 0.4s ease 0s;
+    border-bottom: 1px solid white;
+}
+.conatent-items .login_me:hover{
+    background-color: #cccccc7e;
+    color: #fff;
+}
+.logo-image{
+    height: 70px;
+    margin-left: 30px;
+    border: none;
+}
+
+/* part 1 */
+/* sliding bar */
+
+img{
+    height: 500px;
+    width: 100%;
+    margin: 3px;
+    border:1px solid #033747;
+}
+@keyframes slider{
+    0%{left: 0;}
+    20%{left: 0;}
+    25%{left: -100%;}
+    45%{left: -100%;}
+    50%{left: -200%;}
+    70%{left: -200%;}
+    75%{left: -200%;}
+    95%{left: -300%;}
+    100%{left: -400%;}
+}
+.slider{
+    overflow: hidden;
+    width: auto;
+}
+.slider img{
+    float: left;
+    width: 20%;
+}
+.slider figure{
+    position: relative;
+    width: 500%;
+    animation: 10s slider infinite;
+}
+
+/* part 2 About section */
+/* section 2 */
+.detail{
+    border: 1px solid rgb(88, 82, 82);
+    margin: 20px;
+    padding: 15px;
+}
+.detail h2{
+    margin: 15px 0 15px 30px;
+    color: rgb(120, 34, 34);
+}
+.detail h3{
+    margin: 15px 0 15px 15px;
+    color: rgb(30, 15, 15);
+}
+
+.detail p{
+    /* border: 2px solid red; */
+    margin: 10px;
+}
+/* about 2.0  */
+ul li{
+    margin: 0 0 0 20px;
+}
+ul p{
+    font-weight: bold;
+}
+/* about 2.1  */
+ol li{
+    margin-left: 20px;
+}
+
+/* part 3 footer section  */
+footer{
+    border: 1px solid rgb(88, 82, 82);
+    margin: 20px;
+    padding: 15px;
+}
+footer h2{
+    margin: 10px;
+}
+/* last section  */
+.sapce{
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    padding:  8px 20px;
+    background-color: #d358338c;
+}
+
+.image_containar{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 99%;
+  height: 500px;
+  /* background-color: black; */
+  margin: 10px;
+}
+.image_containar img{
+    height: 225px;
+    width: 380px;
+    margin: 10px;
+    border: 1px solid #7b5e5e;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* navbar me a tag hai ,usme ek active class name  hai usko use (line) hold ke liye kiya hai  */
+.conatent-items .active {
+    border-bottom: 2px solid white;
+}
+nav a.active:hover {
+    color: aliceblue;
+    opacity: 0.8;
+    border-bottom: 2px solid white;
+}
